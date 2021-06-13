@@ -285,12 +285,13 @@ function topFunction() {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  $(document).ready(function() {
-              var owl = $('.owl-carousel');
+              var owl = $('.pros-slider');
               owl.owlCarousel({
                 margin: 10,
                 nav: true,
                 rtl:true,
                 loop: true,
+                navText: ["<i class='fal fa-angle-right'></i>", "<i class='fal fa-angle-left'></i>"],
                 responsive: {
                   0: {
                     items: 2
@@ -301,8 +302,32 @@ function topFunction() {
                    1200: {
                     items: 4
                   },
-                  1400: {
+                  1500: {
                     items: 5
+                  }
+                   
+                }
+              })
+
+               var owl = $('.cats-slider');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                rtl:true,
+                loop: true,
+                 navText: ["<i class='fal fa-angle-right'></i>", "<i class='fal fa-angle-left'></i>"],
+                responsive: {
+                  0: {
+                    items: 2
+                  },
+                  600: {
+                    items: 3
+                  },
+                   1200: {
+                    items: 4
+                  },
+                  1500: {
+                    items: 6
                   }
                    
                 }
