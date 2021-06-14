@@ -931,10 +931,9 @@ font-size: 15px;
   margin-top: 1px;
 }
 .fav{
-      /* float: left; */
-      /* margin-right: 5px; */
+    
       float: left;
-      margin-top: -33px;
+      margin-top: 0px;
 }
 .fav i{
      
