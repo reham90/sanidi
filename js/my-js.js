@@ -317,9 +317,14 @@ $(document).ready(function(){
     });
   //this feature only show on 600px device width
     $(".hamburger-menu").click(function(){
-      $(".burger-1, .burger-2, .burger-3").toggleClass("open");
+      $(".bars").toggleClass("open");
         $(".core-menu").slideToggle("fast");
+     $(".cover").css("display" , "block");
     });
 });
 /** credit:@rafonzoo 
 http://rafonzo.blogspot.co.id/ **/
+
+
+
+
