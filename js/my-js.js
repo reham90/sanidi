@@ -80,40 +80,7 @@ document.addEventListener("click", closeAllSelect);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- (function($) { 
-  $(function() { 
 
-    //  open and close nav 
-    $('#navbar-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-
-
-    // Hamburger toggle
-    $('#navbar-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-
-
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.navbar-dropdown').slideToggle("slow");
-
-      // Close dropdown when select another dropdown
-      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
-      e.stopPropagation();
-    });
-
-
-
-
-
-    // Click outside the dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.navbar-dropdown').hide();
-    });
-  }); 
-})(jQuery); 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -333,3 +300,26 @@ function topFunction() {
                 }
               })
             })
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(document).ready(function(){
+  //the trigger on hover when cursor directed to this class
+    $(".core-menu li").hover(
+    function(){
+      //i used the parent ul to show submenu
+        $(this).children('ul').slideDown('fast');
+    }, 
+      //when the cursor away 
+    function () {
+        $('ul', this).slideUp('fast');
+    });
+  //this feature only show on 600px device width
+    $(".hamburger-menu").click(function(){
+      $(".burger-1, .burger-2, .burger-3").toggleClass("open");
+        $(".core-menu").slideToggle("fast");
+    });
+});
+/** credit:@rafonzoo 
+http://rafonzo.blogspot.co.id/ **/
