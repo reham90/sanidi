@@ -319,7 +319,12 @@ $(document).ready(function(){
     $(".hamburger-menu").click(function(){
       $(".bars").toggleClass("open");
         $(".core-menu").slideToggle("fast");
-     $(".cover").css("display" , "block");
+     var x = document.getElementById("cover");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
     });
 });
 /** credit:@rafonzoo 
