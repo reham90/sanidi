@@ -708,6 +708,7 @@ height: 200px;
   margin-left: auto;
   margin-right: auto;
   display: table;
+  margin-top: 8px;
 }
 
 
@@ -727,13 +728,13 @@ height: 200px;
 }
 .pro-tabs >li.active:after{
       width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #ea8f3c;
-    position: absolute;
-    top: 40px;
-    left: 41%; 
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #ea8f3c;
+      position: absolute;
+      top: 40px;
+      left: 41%;
 }
 .pro-tabs > li{
   background: transparent;
@@ -1475,7 +1476,7 @@ box-shadow: 1px 1px 7px 0px #8888884a;
   }
   
 .slide__content{
-  top:-44px;
+  top: -32px;
 }
 .sign-cart-list li{
   margin-left: 10px;
@@ -1484,7 +1485,10 @@ box-shadow: 1px 1px 7px 0px #8888884a;
   font-size: 13px;
 }
 .pro-tabs >li.active:after{
-  border:0;
+  /* border:0; */
+  top: 30px;
+  z-index: 9999;
+  /* position: relative; */
 }
 .pro-tabs > li > a{
   font-size: 13px;
@@ -1587,6 +1591,7 @@ footer h3{
   white-space: nowrap;
   max-width: 100%;
   overflow-x: auto;
+  height: 51px;
 }
 .fav{
 margin-left: -25px;
@@ -1619,6 +1624,8 @@ margin-left: -25px;
 }
 .owl-carousel .owl-item img{
 	height: auto;
+	/* padding-bottom: 13px; */
+	/* display: block; */
 }
 .cat-img{
 	margin-bottom: 0;

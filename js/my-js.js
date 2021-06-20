@@ -258,6 +258,9 @@ function topFunction() {
                 nav: true,
                 rtl:true,
                 loop: true,
+                 autoplay: true,
+                  autoplayTimeout: 1500,
+                autoplayHoverPause: true,
                 navText: ["<i class='fal fa-angle-right'></i>", "<i class='fal fa-angle-left'></i>"],
                 responsive: {
                   0: {
@@ -282,6 +285,9 @@ function topFunction() {
                 nav: true,
                 rtl:true,
                 loop: true,
+                 autoplay: true,
+                  autoplayTimeout: 1500,
+                autoplayHoverPause: true,
                  navText: ["<i class='fal fa-angle-right'></i>", "<i class='fal fa-angle-left'></i>"],
                 responsive: {
                   0: {
@@ -318,7 +324,7 @@ $(document).ready(function(){
   //this feature only show on 600px device width
     $(".hamburger-menu").click(function(){
       $(".bars").toggleClass("open");
-        $(".core-menu").slideToggle("fast");
+        $(".core-menu").toggle("fast");
            
         
      var x = document.getElementById("cover");
