@@ -319,14 +319,40 @@ $(document).ready(function(){
     $(".hamburger-menu").click(function(){
       $(".bars").toggleClass("open");
         $(".core-menu").slideToggle("fast");
+           
+        
      var x = document.getElementById("cover");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   }
+
+  var y = document.getElementById("re-show");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+
+
+   var z = document.getElementById("re-hide");
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "block";
+  }
     });
-});
+
+
+     
+
+    });
+
+  
+ 
+   
+
 /** credit:@rafonzoo 
 http://rafonzo.blogspot.co.id/ **/
 

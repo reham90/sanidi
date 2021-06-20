@@ -22,7 +22,7 @@ position: relative;
 }
 
   .cover{
-  	background: #00000073;
+  	background: #000000a1;
   	height: 100%;
   	position: absolute;
   	top: 0;
@@ -171,6 +171,12 @@ float: left;
 .sign-cart-list i{
   padding-left: 3px;
 }
+#re-hide{
+	display: none;
+}
+#re-show{
+	display: block;
+}
 .cart{
       font-size: 15px;
     border: 2px solid #399db6;
@@ -272,7 +278,10 @@ float: left;
          /* width: 100%; */
     }
    
-   
+   .re-hide{
+	   
+    margin-top: 5px;
+}
      .re-menu  li a {
          padding: 15px;
          line-height: 20px;
@@ -282,6 +291,8 @@ float: left;
      .re-menu li ul li a {
          padding-left: 30px;
          text-align: right;
+         color: #1a1a1a;
+         font-weight: 500;
     }
     
  @media screen and (min-width:800px) {
@@ -1273,9 +1284,13 @@ li span.toggle2 {
 
 /* width:100%; */
 
-background: #fafefe;
+/* background: #fafefe; */
 
 margin:auto;
+
+background: rgb(223,230,249);
+
+background: linear-gradient(0deg, rgba(223,230,249,1) 24%, rgba(255,255,255,1) 80%);
 
 display:none;
 
@@ -1289,12 +1304,11 @@ right: 0;
 
 /* border: 1px solid #fafefe; */
 
-z-index: 9119;
+z-index: 9999;
 
 height: 101%;
 
 box-shadow: 1px 1px 7px 0px #8888884a;
-
 }
 
   .core-menu li {
@@ -1315,9 +1329,9 @@ box-shadow: 1px 1px 7px 0px #8888884a;
        /* top: -119px; */
        right: 0;
        cursor: pointer;
-       height: 100%;
+       /* height: 100%; */
        padding: 0;
-       z-index: 999;
+       z-index: 99999;
   }
   .burger-1, .burger-2, .burger-3 {
   display:block;
@@ -1351,7 +1365,7 @@ box-shadow: 1px 1px 7px 0px #8888884a;
   
   .dropdown {
     width:100%;
-    background: #fafefe;
+    background: transparent;
     text-align:center;
     position:relative;
     box-shadow: none;
@@ -1362,19 +1376,23 @@ box-shadow: 1px 1px 7px 0px #8888884a;
     width:100%;
     position:relative;
     padding:0 20px;
-    background: #fafefe;
+    background: transparent;
     box-shadow: none;
 }
 .menuu{
 	    background: #138aa8;
 	    color: #fff;
 	    padding: 11px 12px;
+	    font-weight: 500;
+	    padding-top: 15px;
 }
 .re-menu li a:hover, .re-menu li a:visited:hover{
 	color: #138aa8;
 }
 .re-menu li a{
-	color: gray;
+	color: #1a1a1a;
+	font-weight: 500;
+	padding-bottom: 2px;
 }
 }
 
