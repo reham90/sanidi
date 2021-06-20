@@ -1537,7 +1537,7 @@ box-shadow: 1px 1px 7px 0px #8888884a;
   display: none !important;
 }
 .pro-name{
-  top:50%;
+  top:55%;
   font-size: 13px;
   right: 0;
 }
@@ -1659,6 +1659,11 @@ footer h3{
 }
 .ar-left{
 	top: 75%;
+}
+.footer-logo{
+	margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 }
 
