@@ -259,7 +259,7 @@ function topFunction() {
                 rtl:true,
                 loop: true,
                  autoplay: true,
-                  autoplayTimeout: 1500,
+                  autoplayTimeout: 2000,
                 autoplayHoverPause: true,
                 navText: ["<i class='fal fa-angle-right'></i>", "<i class='fal fa-angle-left'></i>"],
                 responsive: {
@@ -286,7 +286,7 @@ function topFunction() {
                 rtl:true,
                 loop: true,
                  autoplay: true,
-                  autoplayTimeout: 1500,
+                  autoplayTimeout: 2000,
                 autoplayHoverPause: true,
                  navText: ["<i class='fal fa-angle-right'></i>", "<i class='fal fa-angle-left'></i>"],
                 responsive: {
